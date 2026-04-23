@@ -3,156 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lujain Alaydie | iOS Architect</title>
+    <title>Lujain Alaydie | iOS Architect & Data Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
     <style>
         html { scroll-behavior: smooth; }
-        body { font-family: 'Space Grotesk', sans-serif; background-color: #030303; color: #ffffff; }
+        body { font-family: 'Space Grotesk', sans-serif; background-color: #020205; color: #ffffff; }
         .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.08); }
         .neon-blue { box-shadow: 0 0 30px rgba(0, 163, 255, 0.15); }
         .gradient-blue { background: linear-gradient(135deg, #00F0FF 0%, #0075FF 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .nav-link:hover { color: #00F0FF; text-shadow: 0 0 10px rgba(0, 240, 255, 0.5); }
         .timeline-dot { width: 12px; height: 12px; background: #0075FF; border-radius: 50%; box-shadow: 0 0 10px #0075FF; }
+        .app-card { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .app-card:hover { transform: translateY(-10px); border-color: rgba(0, 240, 255, 0.4); }
     </style>
 </head>
 <body class="antialiased overflow-x-hidden">
 
-    <div class="fixed top-0 left-0 w-full h-full -z-10 opacity-40 pointer-events-none">
-        <div class="absolute top-[-20%] right-[-10%] w-[800px] h-[800px] bg-blue-900 rounded-full blur-[150px]"></div>
-        <div class="absolute bottom-[-20%] left-[-10%] w-[800px] h-[800px] bg-indigo-900 rounded-full blur-[150px]"></div>
+    <div class="fixed top-0 left-0 w-full h-full -z-10 opacity-30 pointer-events-none">
+        <div class="absolute top-[-10%] right-[-5%] w-[700px] h-[700px] bg-blue-900 rounded-full blur-[140px]"></div>
+        <div class="absolute bottom-[0%] left-[-5%] w-[600px] h-[600px] bg-indigo-900 rounded-full blur-[130px]"></div>
     </div>
 
-    <nav class="fixed top-0 w-full z-50 glass border-b border-white/5 py-4">
+    <nav class="fixed top-0 w-full z-50 glass border-b border-white/5 py-5">
         <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
-            <div class="text-xl font-bold tracking-tighter">L.<span class="text-blue-500">ALAYDIE</span></div>
-            <div class="hidden md:flex gap-10 text-xs font-mono uppercase tracking-widest text-gray-400">
-                <a href="#apps" class="nav-link transition">Apps</a>
+            <div class="text-2xl font-bold tracking-tighter">L.<span class="text-blue-500">ALAYDIE</span></div>
+            <div class="hidden md:flex gap-10 text-[10px] font-mono uppercase tracking-[0.2em] text-gray-400">
+                <a href="#about" class="nav-link transition">The Journey</a>
+                <a href="#apps" class="nav-link transition">Applications</a>
                 <a href="#experience" class="nav-link transition">Experience</a>
                 <a href="#stack" class="nav-link transition">Stack</a>
-                <a href="#contact" class="nav-link transition text-blue-400">Contact</a>
+                <a href="#contact" class="text-blue-400 border border-blue-400/30 px-4 py-1 rounded-full hover:bg-blue-400/10 transition">Get in Touch</a>
             </div>
         </div>
     </nav>
 
-    <header class="max-w-6xl mx-auto pt-48 pb-32 px-6">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-                <h1 class="text-6xl md:text-8xl font-bold mb-8 tracking-tighter">iOS <br><span class="gradient-blue">Architect.</span></h1>
+    <section id="about" class="max-w-7xl mx-auto pt-52 pb-32 px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+            <div class="lg:col-span-7">
+                <div class="inline-block px-4 py-1 rounded-full glass text-[10px] font-mono mb-6 text-blue-400 border-blue-500/30 tracking-widest uppercase">
+                    iOS Architect • Data Engineering Analyst
+                </div>
+                <h1 class="text-6xl md:text-8xl font-bold mb-8 tracking-tighter leading-tight">
+                    Native <br><span class="gradient-blue">Engineering.</span>
+                </h1>
                 <p class="text-xl text-gray-400 leading-relaxed mb-8">
-                    Born in <span class="text-white">Makkah</span>, shaped by <span class="text-white">Multimedia University (Malaysia)</span>, and refined at the <span class="text-white">Apple Developer Academy (Riyadh)</span>. 
-                    I’ve been a solo developer since age 15, and now, alongside my designer partner <span class="text-blue-400 font-bold">Layan</span>, we build high-end native iOS applications that bridge the gap between art and engineering.
+                    Born in <span class="text-white">Makkah</span>, I moved to Malaysia to study IT at <span class="text-white">Multimedia University (MMU)</span> before returning to Riyadh to join the <span class="text-white">Apple Developer Academy</span>. 
+                    I’ve been building for iOS since I was 15. Today, I combine my solo development roots with a design-first partnership with <span class="text-blue-400 font-bold">Layan</span> to create independent, custom iOS applications.
                 </p>
-                <p class="text-gray-500 text-sm italic">Currently residing in Riyadh with my 12 beloved cats (RIP Cosmo 🕊️).</p>
+                <div class="flex items-center gap-4 text-sm text-gray-500">
+                    <span class="flex items-center gap-2">📍 Riyadh, Saudi Arabia</span>
+                    <span class="flex items-center gap-2">🐈 12 Cats (RIP Cosmo 🕊️)</span>
+                </div>
             </div>
-            <div class="glass p-1 rounded-3xl rotate-3 neon-blue">
-                <div class="bg-[#080808] rounded-3xl p-8 border border-white/5">
-                    <h2 class="text-blue-400 font-mono text-sm mb-4">CURRENT STATUS</h2>
-                    <p class="text-2xl font-bold mb-4">Partnering for Innovation</p>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-6">Layan and I are available for building custom iOS apps with a focus on seamless social integration and pixel-perfect design. We transform ideas into App Store realities.</p>
-                    <a href="#contact" class="inline-block bg-blue-600 px-8 py-3 rounded-xl font-bold hover:bg-blue-500 transition">Book a Discovery Meeting</a>
+            <div class="lg:col-span-5">
+                <div class="glass p-1 rounded-[2.5rem] rotate-2 neon-blue">
+                    <div class="bg-[#08080c] rounded-[2.5rem] p-10 border border-white/5">
+                        <h2 class="text-blue-500 font-mono text-xs mb-4 tracking-[0.3em]">PARTNERSHIP</h2>
+                        <p class="text-3xl font-bold mb-4">Lujain × Layan</p>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-8">
+                            We specialize in building custom iOS apps with seamless social integration. Combining high-level programmer logic with world-class 3D design and artwork.
+                        </p>
+                        <a href="#contact" class="block text-center bg-blue-600 py-4 rounded-2xl font-bold hover:bg-blue-500 transition shadow-lg shadow-blue-900/40">Request a Custom Build</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
     <section id="apps" class="max-w-7xl mx-auto px-6 py-24">
-        <h2 class="text-4xl font-bold mb-16 tracking-tighter">Live <span class="text-blue-500">Ecosystems</span></h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="glass p-8 rounded-[2.5rem] border-2 border-blue-500/20 relative">
-                <span class="absolute top-6 right-6 text-[10px] bg-blue-600 px-2 py-1 rounded-full font-bold">SOON</span>
+        <div class="flex justify-between items-end mb-16">
+            <div>
+                <h2 class="text-4xl font-bold tracking-tighter">The <span class="text-blue-500 text-italic">App Store</span> Portfolio</h2>
+                <p class="text-gray-500 mt-2">Native experiences developed independently.</p>
+            </div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="app-card glass p-8 rounded-[3rem] relative border-2 border-blue-500/20">
+                <span class="absolute top-6 right-8 text-[10px] font-bold text-blue-400 animate-pulse">BUILDING...</span>
                 <div class="text-4xl mb-6">💬</div>
                 <h3 class="text-2xl font-bold mb-2">Bleep</h3>
-                <p class="text-gray-400 text-sm mb-6">Next-gen social integration platform. Built natively for speed and security.</p>
-                <div class="h-1 bg-blue-900 w-full rounded-full overflow-hidden">
-                    <div class="h-full bg-blue-500 w-4/5 animate-pulse"></div>
+                <p class="text-gray-400 text-sm mb-6">Coming Soon. A next-gen social experience focused on speed, privacy, and high-tech aesthetics.</p>
+                <div class="flex gap-2">
+                    <span class="text-[10px] font-mono glass px-2 py-1 rounded">SwiftUI</span>
+                    <span class="text-[10px] font-mono glass px-2 py-1 rounded">Firebase</span>
                 </div>
             </div>
-            <div class="glass p-8 rounded-[2.5rem] hover:border-blue-500/50 transition">
+
+            <div class="app-card glass p-8 rounded-[3rem] border border-green-500/10 hover:border-green-500/40 group">
+                <div class="text-4xl mb-6 group-hover:scale-110 transition">👩‍💻</div>
+                <h3 class="text-2xl font-bold mb-2 text-green-400">Cipher Chase</h3>
+                <p class="text-gray-400 text-sm mb-6">A nerd programmer's detective game. Solve coding puzzles and logic-based mysteries in the real world.</p>
+                <a href="http://apps.apple.com/us/app/cipher-chase/id6473859489" class="text-green-500 text-xs font-bold font-mono tracking-tighter uppercase">Decrypt on App Store -></a>
+            </div>
+
+            <div class="app-card glass p-8 rounded-[3rem]">
                 <div class="text-4xl mb-6">🪐</div>
                 <h3 class="text-2xl font-bold mb-2">Liyo Planet</h3>
-                <p class="text-gray-400 text-sm mb-6">A private networking universe. Native Swift evolution from FlutterFlow.</p>
-                <a href="https://apps.apple.com/app/id6761609759" class="text-blue-400 text-sm font-bold underline">App Store -></a>
+                <p class="text-gray-400 text-sm mb-6">A digital sanctuary for couples. A native Swift rebuild focused on buttery-smooth interactions.</p>
+                <a href="https://apps.apple.com/app/id6761609759" class="text-blue-400 text-xs font-bold uppercase">View on App Store -></a>
             </div>
-            <div class="glass p-8 rounded-[2.5rem] hover:border-blue-500/50 transition">
+
+            <div class="app-card glass p-8 rounded-[3rem]">
                 <div class="text-4xl mb-6">🧘‍♂️</div>
                 <h3 class="text-2xl font-bold mb-2">ReflectlyMood</h3>
-                <p class="text-gray-400 text-sm mb-6">Privacy-focused mood tracking powered by SwiftData local storage.</p>
-                <a href="https://apps.apple.com/app/id6761758994" class="text-blue-400 text-sm font-bold underline">App Store -></a>
+                <p class="text-gray-400 text-sm mb-6">Privacy-first mood tracker. SwiftData implementation for encrypted, local-only storage.</p>
+                <a href="https://apps.apple.com/app/id6761758994" class="text-blue-400 text-xs font-bold uppercase">View on App Store -></a>
+            </div>
+
+            <div class="app-card glass p-8 rounded-[3rem]">
+                <div class="text-4xl mb-6">🃏</div>
+                <h3 class="text-2xl font-bold mb-2">إحبكها</h3>
+                <p class="text-gray-400 text-sm mb-6">Academy Macro Challenge. A social group game celebrating culture and local competition.</p>
+                <a href="https://apps.apple.com/app/id6502529518" class="text-blue-400 text-xs font-bold uppercase">View on App Store -></a>
+            </div>
+
+            <div class="app-card glass p-8 rounded-[3rem]">
+                <div class="text-4xl mb-6">🐱</div>
+                <h3 class="text-2xl font-bold mb-2">Luna's World</h3>
+                <p class="text-gray-400 text-sm mb-6">Community hub for cat lovers. Features AI breed detection and adoption registries.</p>
+                <a href="https://apps.apple.com/app/id6449742649" class="text-blue-400 text-xs font-bold uppercase">View on App Store -></a>
             </div>
         </div>
     </section>
 
     <section id="experience" class="max-w-4xl mx-auto px-6 py-24">
-        <h2 class="text-4xl font-bold mb-16 tracking-tighter">The <span class="text-blue-500">Timeline</span></h2>
-        <div class="space-y-12">
-            <div class="flex gap-8">
-                <div class="flex flex-col items-center"><div class="timeline-dot"></div><div class="w-px h-full bg-white/10 mt-2"></div></div>
+        <h2 class="text-4xl font-bold mb-16 tracking-tighter text-center">Work <span class="text-blue-500">History</span></h2>
+        <div class="space-y-16">
+            <div class="flex gap-8 group">
+                <div class="flex flex-col items-center">
+                    <div class="timeline-dot group-hover:scale-150 transition"></div>
+                    <div class="w-px h-full bg-white/10 mt-4"></div>
+                </div>
                 <div>
-                    <h3 class="text-2xl font-bold">Data Engineering Analyst @ Accenture</h3>
-                    <p class="text-blue-400 font-mono text-sm mb-4">2024 — 2025</p>
-                    <p class="text-gray-400">Spearheaded IDQ (Informatica Data Quality) and SQL testing. Specialized in AI system testing for major financial institutions, ensuring robust data architecture.</p>
+                    <h3 class="text-2xl font-bold">Data Engineering Analyst</h3>
+                    <p class="text-blue-400 font-mono text-sm mb-4">Accenture • 2024 — 2025</p>
+                    <p class="text-gray-400 leading-relaxed">
+                        Focused on <span class="text-white">IDQ (Informatica Data Quality)</span> and SQL testing. Specialized in testing voice-activated loan/credit systems and financial data architecture.
+                    </p>
                 </div>
             </div>
-            <div class="flex gap-8">
-                <div class="flex flex-col items-center"><div class="timeline-dot"></div><div class="w-px h-full bg-white/10 mt-2"></div></div>
+            <div class="flex gap-8 group">
+                <div class="flex flex-col items-center">
+                    <div class="timeline-dot group-hover:scale-150 transition"></div>
+                    <div class="w-px h-full bg-white/10 mt-4"></div>
+                </div>
                 <div>
-                    <h3 class="text-2xl font-bold">Apple Developer Academy Alumni</h3>
-                    <p class="text-blue-400 font-mono text-sm mb-4">Riyadh, SA</p>
-                    <p class="text-gray-400">Collaborated on high-scale projects including "احبكها". Deep dive into Apple Human Interface Guidelines and Native Swift architecture.</p>
+                    <h3 class="text-2xl font-bold">Apple Developer Academy</h3>
+                    <p class="text-blue-400 font-mono text-sm mb-4">Academic Program Alumni • Riyadh</p>
+                    <p class="text-gray-400 leading-relaxed">
+                        9-month intensive immersion in Apple's ecosystem. Mastered Human Interface Guidelines, accessibility standards, and complex collaborative app architecture.
+                    </p>
                 </div>
             </div>
-            <div class="flex gap-8">
-                <div class="flex flex-col items-center"><div class="timeline-dot"></div></div>
+            <div class="flex gap-8 group">
+                <div class="flex flex-col items-center">
+                    <div class="timeline-dot group-hover:scale-150 transition"></div>
+                </div>
                 <div>
                     <h3 class="text-2xl font-bold">Multimedia University (MMU)</h3>
-                    <p class="text-blue-400 font-mono text-sm mb-4">Cyberjaya, Malaysia</p>
-                    <p class="text-gray-400">Bachelor's in Information Technology. Moved from Makkah to Malaysia to pursue a global perspective on tech and media systems.</p>
+                    <p class="text-blue-400 font-mono text-sm mb-4">Bachelor in Information Technology • Malaysia</p>
+                    <p class="text-gray-400 leading-relaxed">
+                        Studied in Cyberjaya, Malaysia. Developed a foundation in IT systems and multimedia integration, setting the stage for a career in mobile architecture.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="stack" class="glass rounded-[4rem] max-w-7xl mx-auto px-12 py-24 my-24">
-        <h2 class="text-4xl font-bold mb-16 text-center">Technical <span class="text-blue-500">Arsenal</span></h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
-            <div class="text-center">
-                <h4 class="text-blue-400 font-bold mb-4">iOS Core</h4>
-                <p class="text-gray-400 text-sm space-y-2">Swift • SwiftUI<br>SwiftData • UIKit<br>CoreML • MapKit</p>
-            </div>
-            <div class="text-center">
-                <h4 class="text-blue-400 font-bold mb-4">Backend/Data</h4>
-                <p class="text-gray-400 text-sm space-y-2">Firebase • SQL<br>Informatica (IDQ)<br>REST APIs • Swift Cloud</p>
-            </div>
-            <div class="text-center">
-                <h4 class="text-blue-400 font-bold mb-4">Design/UX</h4>
-                <p class="text-gray-400 text-sm space-y-2">Figma • Human Interface Guidelines<br>Lottie Animations<br>Custom Haptics</p>
-            </div>
-            <div class="text-center">
-                <h4 class="text-blue-400 font-bold mb-4">Engineering</h4>
-                <p class="text-gray-400 text-sm space-y-2">MVVM / Clean Architecture<br>Unit Testing<br>CI/CD with TestFlight</p>
+    <section id="stack" class="max-w-7xl mx-auto px-6 py-24 mb-32">
+        <div class="glass rounded-[4rem] p-16 border border-blue-500/10">
+            <h2 class="text-4xl font-bold mb-16 text-center tracking-tighter">The Technical <span class="text-blue-500">Stack</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 text-center">
+                <div>
+                    <h4 class="text-blue-400 font-mono text-xs tracking-widest mb-6">IOS ARCHITECTURE</h4>
+                    <p class="text-gray-300 space-y-3 font-medium">Swift / SwiftUI<br>SwiftData / CoreData<br>UIKit / MapKit<br>CoreML (AI)</p>
+                </div>
+                <div>
+                    <h4 class="text-blue-400 font-mono text-xs tracking-widest mb-6">DATA & LOGIC</h4>
+                    <p class="text-gray-300 space-y-3 font-medium">SQL / IDQ<br>Firebase Auth/DB<br>Encryption Logic<br>REST API Integrations</p>
+                </div>
+                <div>
+                    <h4 class="text-blue-400 font-mono text-xs tracking-widest mb-6">DESIGN & UX</h4>
+                    <p class="text-gray-300 space-y-3 font-medium">Figma Mastery<br>3D Artwork Integration<br>Custom Haptics<br>Lottie Animations</p>
+                </div>
+                <div>
+                    <h4 class="text-blue-400 font-mono text-xs tracking-widest mb-6">NERD LOGIC</h4>
+                    <p class="text-gray-300 space-y-3 font-medium">Code Breaking<br>Geofencing Detective Logic<br>Unit Testing<br>MVVM / Clean Arch</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="contact" class="max-w-3xl mx-auto px-6 py-24">
         <div class="text-center mb-16">
-            <h2 class="text-5xl font-bold mb-4 tracking-tighter">Get in <span class="text-blue-500">Touch</span></h2>
-            <p class="text-gray-400 text-lg">Interested in a custom app or just want to chat about cats? Send a transmission.</p>
+            <h2 class="text-5xl font-bold mb-4 tracking-tighter">Initiate <span class="text-blue-500">Contact</span></h2>
+            <p class="text-gray-500">Ready for custom builds or technical consultation.</p>
         </div>
         
         <form action="https://formspree.io/f/lujainalaydie1@gmail.com" method="POST" class="space-y-6">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <input type="text" name="name" placeholder="Name" required class="glass w-full px-6 py-4 rounded-xl focus:outline-none focus:border-blue-500 border border-white/5 transition">
-                <input type="email" name="_replyto" placeholder="Email" required class="glass w-full px-6 py-4 rounded-xl focus:outline-none focus:border-blue-500 border border-white/5 transition">
+                <input type="text" name="name" placeholder="Full Name" required class="glass w-full px-8 py-5 rounded-2xl focus:outline-none focus:border-blue-500/50 border border-white/5 transition">
+                <input type="email" name="_replyto" placeholder="Professional Email" required class="glass w-full px-8 py-5 rounded-2xl focus:outline-none focus:border-blue-500/50 border border-white/5 transition">
             </div>
-            <textarea name="message" placeholder="Project Details" rows="6" required class="glass w-full px-6 py-4 rounded-xl focus:outline-none focus:border-blue-500 border border-white/5 transition"></textarea>
-            <button type="submit" class="w-full bg-blue-600 py-4 rounded-xl font-bold text-lg hover:bg-blue-500 shadow-lg shadow-blue-900/20 transition">Initiate Communication</button>
+            <textarea name="message" placeholder="Describe your project vision..." rows="6" required class="glass w-full px-8 py-5 rounded-2xl focus:outline-none focus:border-blue-500/50 border border-white/5 transition"></textarea>
+            <button type="submit" class="w-full bg-blue-600 py-5 rounded-2xl font-bold text-xl hover:bg-blue-500 shadow-xl shadow-blue-900/30 transition-all">Send Transmission</button>
         </form>
-    </header>
+    </section>
 
-    <footer class="py-12 border-t border-white/5 text-center text-gray-500 text-sm">
-        <p>&copy; 2026 Lujain Alaydie. Built natively with ❤️ and 12 🐱.</p>
+    <footer class="py-20 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-gray-500 text-sm">
+                &copy; 2026 Lujain Alaydie. Built with Swift-Inspired design in Riyadh. 🐈 x 12
+            </div>
+            <div class="flex gap-10 text-xs font-mono tracking-widest text-gray-400">
+                <a href="https://github.com/lujainalaydie1" class="hover:text-blue-400 transition">GITHUB</a>
+                <a href="https://www.linkedin.com/in/lujain-alaydie/" class="hover:text-blue-400 transition">LINKEDIN</a>
+            </div>
+        </div>
     </footer>
 
 </body>
