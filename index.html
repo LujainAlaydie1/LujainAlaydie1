@@ -8,143 +8,140 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Space Grotesk', sans-serif; background-color: #050505; color: #ffffff; }
-        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .neon-glow { box-shadow: 0 0 25px rgba(255, 107, 0, 0.15); }
-        .gradient-text { background: linear-gradient(90deg, #FF6B00, #FFBB00); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .app-card:hover { transform: translateY(-10px); transition: all 0.4s ease; border-color: #FF6B00; }
+        .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
+        .neon-glow-blue { box-shadow: 0 0 25px rgba(0, 150, 255, 0.15); }
+        .gradient-text-blue { background: linear-gradient(90deg, #00C2FF, #0057FF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .app-card { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .app-card:hover { transform: translateY(-12px); border-color: #00C2FF; box-shadow: 0 0 30px rgba(0, 194, 255, 0.1); }
+        .badge-soon { background: linear-gradient(90deg, #00C2FF, #7000FF); }
     </style>
 </head>
 <body class="antialiased overflow-x-hidden">
 
-    <div class="fixed top-0 left-0 w-full h-full -z-10 opacity-20 pointer-events-none">
-        <div class="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-orange-600 rounded-full blur-[120px]"></div>
-        <div class="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] bg-purple-600 rounded-full blur-[120px]"></div>
+    <div class="fixed top-0 left-0 w-full h-full -z-10 opacity-30 pointer-events-none">
+        <div class="absolute top-[-15%] right-[-10%] w-[600px] h-[600px] bg-blue-900 rounded-full blur-[140px]"></div>
+        <div class="absolute bottom-[-15%] left-[-10%] w-[600px] h-[600px] bg-indigo-900 rounded-full blur-[140px]"></div>
     </div>
 
-    <nav class="max-w-7xl mx-auto px-6 py-8 flex justify-between items-center">
-        <div class="text-2xl font-bold tracking-tighter">L.<span class="text-orange-500">ALAYDIE</span></div>
-        <div class="hidden md:flex gap-8 text-sm font-medium text-gray-400">
-            <a href="#" class="hover:text-white transition">Apps</a>
-            <a href="#" class="hover:text-white transition">Experience</a>
-            <a href="#" class="hover:text-white transition">Stack</a>
-            <a href="mailto:contact@lujain.dev" class="text-orange-500 underline underline-offset-4">Get in Touch</a>
+    <nav class="max-w-7xl mx-auto px-6 py-10 flex justify-between items-center">
+        <div class="text-2xl font-bold tracking-tighter">L.<span class="text-blue-500">ALAYDIE</span></div>
+        <div class="hidden md:flex gap-10 text-sm font-medium text-gray-400">
+            <a href="#apps" class="hover:text-blue-400 transition">Applications</a>
+            <a href="https://github.com/lujainalaydie1" class="hover:text-blue-400 transition">Open Source</a>
+            <a href="mailto:contact@lujain.dev" class="text-blue-400 border border-blue-400/30 px-4 py-2 rounded-full hover:bg-blue-400/10 transition">Let's Talk</a>
         </div>
     </nav>
 
     <header class="max-w-5xl mx-auto py-24 px-6 text-center">
-        <div class="inline-block px-4 py-1 rounded-full glass text-xs font-mono mb-6 text-orange-400 border-orange-500/30">AVAILABLE FOR IMMEDIATE JOINING IN RIYADH</div>
-        <h1 class="text-6xl md:text-8xl font-bold mb-6 tracking-tighter">iOS <span class="gradient-text">Architect.</span></h1>
+        <div class="inline-block px-4 py-1 rounded-full glass text-xs font-mono mb-8 text-blue-400 border-blue-500/20 tracking-widest uppercase">Riyadh Based • iOS Developer</div>
+        <h1 class="text-7xl md:text-9xl font-bold mb-8 tracking-tighter">iOS <span class="gradient-text-blue">Architect.</span></h1>
         <p class="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
-            Building native experiences since age 15. Focused on <span class="text-white">Swift, SwiftUI, & Data Engineering.</span> Alumna of the Apple Developer Academy.
+            Building native ecosystems since age 15. Expert in <span class="text-white">Swift, SwiftUI, & SwiftData.</span> <br>Alumna of the Apple Developer Academy.
         </p>
     </header>
 
-    <main class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-32">
+    <main id="apps" class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-20">
         
-        <div class="app-card glass p-8 rounded-[2.5rem] neon-glow relative overflow-hidden">
-            <div class="flex justify-between mb-8">
-                <div class="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center text-3xl shadow-lg">🪐</div>
-                <div class="text-right">
-                    <p class="text-[10px] font-mono text-orange-400 uppercase tracking-widest">Networking</p>
+        <div class="app-card glass p-8 rounded-[3rem] relative overflow-hidden border-2 border-blue-500/30 neon-glow-blue">
+            <div class="absolute top-6 right-6 badge-soon px-3 py-1 rounded-full text-[10px] font-bold tracking-tighter">COMING SOON</div>
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-700 rounded-2xl flex items-center justify-center text-3xl shadow-lg">💬</div>
+                <div>
+                    <h3 class="text-2xl font-bold">Bleep</h3>
+                    <p class="text-[10px] font-mono text-blue-400 uppercase tracking-widest">Next-Gen Social</p>
+                </div>
+            </div>
+            <p class="text-gray-400 text-sm mb-6 leading-relaxed">A modern social experience built with high-performance networking and a custom design language. Currently in active development.</p>
+            <div class="flex flex-wrap gap-2 mb-8">
+                <span class="text-[10px] px-3 py-1 glass rounded-full">SwiftUI</span>
+                <span class="text-[10px] px-3 py-1 glass rounded-full">Firebase Auth</span>
+                <span class="text-[10px] px-3 py-1 glass rounded-full">MVVM</span>
+            </div>
+            <div class="w-full text-center py-4 rounded-2xl bg-blue-600/20 text-blue-400 font-bold border border-blue-500/30 cursor-wait">Development in Progress</div>
+        </div>
+
+        <div class="app-card glass p-8 rounded-[3rem] relative overflow-hidden">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-16 h-16 bg-blue-500 rounded-2xl flex items-center justify-center text-3xl shadow-lg">🪐</div>
+                <div>
                     <h3 class="text-2xl font-bold">Liyo Planet</h3>
+                    <p class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">Networking</p>
                 </div>
             </div>
-            <p class="text-gray-400 text-sm mb-6 leading-relaxed">A digital sanctuary for couples. Rebuilt natively in Swift to replace FlutterFlow for superior performance and animations.</p>
-            <div class="flex flex-wrap gap-2 mb-8">
-                <span class="text-[10px] px-2 py-1 glass rounded-md">SwiftUI</span>
-                <span class="text-[10px] px-2 py-1 glass rounded-md">Firebase</span>
-                <span class="text-[10px] px-2 py-1 glass rounded-md">SwiftData</span>
-            </div>
-            <a href="https://apps.apple.com/app/id6761609759" target="_blank" class="block text-center py-4 rounded-2xl bg-orange-600 font-bold hover:bg-orange-500 transition">View on App Store</a>
+            <p class="text-gray-400 text-sm mb-6 leading-relaxed">A digital sanctuary for couples. Rebuilt natively in Swift to replace FlutterFlow for buttery-smooth animations.</p>
+            <a href="https://apps.apple.com/app/id6761609759" target="_blank" class="block text-center py-4 rounded-2xl bg-blue-600 font-bold hover:bg-blue-500 transition shadow-lg shadow-blue-900/20">Get on App Store</a>
         </div>
 
-        <div class="app-card glass p-8 rounded-[2.5rem] relative overflow-hidden">
-            <div class="flex justify-between mb-8">
-                <div class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center text-3xl">🧘‍♂️</div>
-                <div class="text-right">
-                    <p class="text-[10px] font-mono text-blue-400 uppercase tracking-widest">Wellness</p>
+        <div class="app-card glass p-8 rounded-[3rem] relative overflow-hidden">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-16 h-16 bg-cyan-600 rounded-2xl flex items-center justify-center text-3xl">🧘‍♂️</div>
+                <div>
                     <h3 class="text-2xl font-bold">ReflectlyMood</h3>
+                    <p class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">Wellness</p>
                 </div>
             </div>
-            <p class="text-gray-400 text-sm mb-6">A privacy-first daily mood tracker. Leverages SwiftData for secure, local-only storage of emotional reflections.</p>
-            <div class="flex flex-wrap gap-2 mb-8">
-                <span class="text-[10px] px-2 py-1 glass rounded-md">SwiftData</span>
-                <span class="text-[10px] px-2 py-1 glass rounded-md">Local-First</span>
-            </div>
-            <a href="https://apps.apple.com/app/id6761758994" class="block text-center py-4 rounded-2xl glass font-bold hover:bg-white/10 transition border-white/20 border">View on App Store</a>
+            <p class="text-gray-400 text-sm mb-6">Privacy-first mood tracker leveraging SwiftData for secure, local-only storage of emotional reflections.</p>
+            <a href="https://apps.apple.com/app/id6761758994" target="_blank" class="block text-center py-4 rounded-2xl glass font-bold hover:bg-white/5 transition border-white/10 border">View App</a>
         </div>
 
-        <div class="app-card glass p-8 rounded-[2.5rem] relative overflow-hidden">
-            <div class="flex justify-between mb-8">
-                <div class="w-16 h-16 bg-purple-600 rounded-2xl flex items-center justify-center text-3xl">🃏</div>
-                <div class="text-right">
-                    <p class="text-[10px] font-mono text-purple-400 uppercase tracking-widest">Trivia Game</p>
+        <div class="app-card glass p-8 rounded-[3rem] relative overflow-hidden">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-16 h-16 bg-indigo-600 rounded-2xl flex items-center justify-center text-3xl">🃏</div>
+                <div>
                     <h3 class="text-2xl font-bold">إحبكها</h3>
+                    <p class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">Social Game</p>
                 </div>
             </div>
-            <p class="text-gray-400 text-sm mb-6 leading-relaxed">Social trivia game created for the Academy Macro Challenge. Features Haptic feedback and Pixel Art aesthetics.</p>
-            <div class="flex flex-wrap gap-2 mb-8">
-                <span class="text-[10px] px-2 py-1 glass rounded-md">Haptics</span>
-                <span class="text-[10px] px-2 py-1 glass rounded-md">Pixel Art</span>
-            </div>
-            <a href="https://apps.apple.com/app/id6502529518" class="block text-center py-4 rounded-2xl glass font-bold hover:bg-white/10 transition border-white/20 border">View on App Store</a>
+            <p class="text-gray-400 text-sm mb-6 leading-relaxed">Macro Challenge project at Apple Academy. Social trivia focusing on haptics and cultural engagement.</p>
+            <a href="https://apps.apple.com/app/id6502529518" target="_blank" class="block text-center py-4 rounded-2xl glass font-bold hover:bg-white/5 transition border-white/10 border">View App</a>
         </div>
 
-        <div class="app-card glass p-8 rounded-[2.5rem] relative overflow-hidden">
-            <div class="flex justify-between mb-8">
-                <div class="w-16 h-16 bg-pink-500 rounded-2xl flex items-center justify-center text-3xl">🐱</div>
-                <div class="text-right">
-                    <p class="text-[10px] font-mono text-pink-400 uppercase tracking-widest">Community</p>
+        <div class="app-card glass p-8 rounded-[3rem] relative overflow-hidden">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-16 h-16 bg-blue-400 rounded-2xl flex items-center justify-center text-3xl">🐱</div>
+                <div>
                     <h3 class="text-2xl font-bold">Luna's World</h3>
+                    <p class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">Community</p>
                 </div>
             </div>
-            <p class="text-gray-400 text-sm mb-6">A hub for cat lovers. Features AI-based breed detection, adoption listings, and clinic ratings. Named after my cat, Luna.</p>
-            <div class="flex flex-wrap gap-2 mb-8">
-                <span class="text-[10px] px-2 py-1 glass rounded-md">CoreML</span>
-                <span class="text-[10px] px-2 py-1 glass rounded-md">Community</span>
-            </div>
-            <a href="https://apps.apple.com/app/id6449742649" class="block text-center py-4 rounded-2xl glass font-bold hover:bg-white/10 transition border-white/20 border">View on App Store</a>
+            <p class="text-gray-400 text-sm mb-6">A hub for cat lovers. Features AI breed detection and adoption listings. Built as a native evolution of my graduation project.</p>
+            <a href="https://apps.apple.com/app/id6449742649" target="_blank" class="block text-center py-4 rounded-2xl glass font-bold hover:bg-white/5 transition border-white/10 border">View App</a>
         </div>
 
-        <div class="app-card glass p-8 rounded-[2.5rem] relative overflow-hidden">
-            <div class="flex justify-between mb-8">
-                <div class="w-16 h-16 bg-yellow-500 rounded-2xl flex items-center justify-center text-3xl">☁️</div>
-                <div class="text-right">
-                    <p class="text-[10px] font-mono text-yellow-400 uppercase tracking-widest">Weather</p>
+        <div class="app-card glass p-8 rounded-[3rem] relative overflow-hidden">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-16 h-16 bg-sky-600 rounded-2xl flex items-center justify-center text-3xl">☁️</div>
+                <div>
                     <h3 class="text-2xl font-bold">Trahal | ترحَّل</h3>
+                    <p class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">Utility</p>
                 </div>
             </div>
-            <p class="text-gray-400 text-sm mb-6">A specialized weather companion for travelers, focusing on localized data and intuitive forecast visualizations.</p>
-            <div class="flex flex-wrap gap-2 mb-8">
-                <span class="text-[10px] px-2 py-1 glass rounded-md">WeatherKit</span>
-                <span class="text-[10px] px-2 py-1 glass rounded-md">Localization</span>
-            </div>
-            <a href="https://apps.apple.com/us/app/trahal-%D8%AA%D8%B1%D8%AD-%D9%84/id6477047439" class="block text-center py-4 rounded-2xl glass font-bold hover:bg-white/10 transition border-white/20 border">View on App Store</a>
+            <p class="text-gray-400 text-sm mb-6 leading-relaxed">Specialized weather companion for travelers with localized data and intuitive visualizations via WeatherKit.</p>
+            <a href="https://apps.apple.com/us/app/trahal-%D8%AA%D8%B1%D8%AD-%D9%84/id6477047439" target="_blank" class="block text-center py-4 rounded-2xl glass font-bold hover:bg-white/5 transition border-white/10 border">View App</a>
         </div>
 
-        <div class="app-card glass p-8 rounded-[2.5rem] relative overflow-hidden">
-            <div class="flex justify-between mb-8">
-                <div class="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center text-3xl">🕵️‍♂️</div>
-                <div class="text-right">
-                    <p class="text-[10px] font-mono text-green-400 uppercase tracking-widest">Adventure</p>
+        <div class="app-card glass p-8 rounded-[3rem] relative overflow-hidden">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-16 h-16 bg-blue-800 rounded-2xl flex items-center justify-center text-3xl">🕵️‍♂️</div>
+                <div>
                     <h3 class="text-2xl font-bold">Cipher Chase</h3>
+                    <p class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">Social Adventure</p>
                 </div>
             </div>
-            <p class="text-gray-400 text-sm mb-6">An adventure-driven social diary. Capture trip memories, tag locations, and share secrets with your inner circle.</p>
-            <div class="flex flex-wrap gap-2 mb-8">
-                <span class="text-[10px] px-2 py-1 glass rounded-md">MapKit</span>
-                <span class="text-[10px] px-2 py-1 glass rounded-md">Social</span>
-            </div>
-            <a href="http://apps.apple.com/us/app/cipher-chase/id6473859489" class="block text-center py-4 rounded-2xl glass font-bold hover:bg-white/10 transition border-white/20 border">View on App Store</a>
+            <p class="text-gray-400 text-sm mb-6 leading-relaxed">Adventure social diary for capturing trip memories and location-based secrets with a specialized MapKit implementation.</p>
+            <a href="http://apps.apple.com/us/app/cipher-chase/id6473859489" target="_blank" class="block text-center py-4 rounded-2xl glass font-bold hover:bg-white/5 transition border-white/10 border">View App</a>
         </div>
 
     </main>
 
-    <footer class="max-w-7xl mx-auto px-6 py-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 gap-6">
-        <p>&copy; 2026 Lujain Alaydie. Built with Passion in Riyadh.</p>
-        <div class="flex gap-8">
-            <a href="https://github.com/lujainalaydie1" class="hover:text-white transition">GitHub</a>
-            <a href="https://www.linkedin.com/in/lujain-alaydie/" class="hover:text-white transition">LinkedIn</a>
+    <footer class="max-w-7xl mx-auto px-6 py-20 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 gap-8">
+        <div class="flex items-center gap-4">
+            <div class="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+            <p>&copy; 2026 Lujain Alaydie • Designed for the Future.</p>
+        </div>
+        <div class="flex gap-10">
+            <a href="https://github.com/lujainalaydie1" class="hover:text-blue-400 transition">GitHub</a>
+            <a href="https://www.linkedin.com/in/lujain-alaydie/" class="hover:text-blue-400 transition">LinkedIn</a>
         </div>
     </footer>
 
